@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { jsx as _jsx } from "react/jsx-runtime";
+import { jsxs as _jsxs } from "react/jsx-runtime";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return /*#__PURE__*/_jsxs("div", {
+    children: [/*#__PURE__*/_jsx("h1", {
+      children: "TestHome"
+    }), /*#__PURE__*/_jsx("section", {
+      children: "check"
+    })]
+  });
 }
-
-export default App;
