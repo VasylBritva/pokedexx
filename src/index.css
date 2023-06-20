@@ -28,7 +28,36 @@ body {
   margin-top: 10px;
 }
 
-/* Стилі для пошукового блоку */
+
+/* Стилі для міток (лейблів) чекбоксів */
+label {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Стилі для незазначених чекбоксів */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkboxes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 10px;
+}
+
 .search-container {
   background-color: #574b6d;
   padding: 20px;
@@ -55,7 +84,8 @@ body {
   margin-right: 20px;
 }
 
-.search-container .buttons-container button {
+
+button {
   background-color: #574b6d;
   color: #fff;
   border: none;
@@ -65,8 +95,7 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-
-.search-container .buttons-container button:hover {
+button:hover {
   background-color: #7f6b96;
 }
 
@@ -101,14 +130,6 @@ body {
 .search-container .checkboxes-container span:hover {
   background-color: #7f6b96;
 }
-
-/* Стилі для контейнера покемонів */
-.pokemon-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
 .checkboxes-container {
   margin-top: 1%;
   padding-top: 1%;
@@ -119,8 +140,6 @@ body {
   border: 2px solid #fff;
   border-radius: 3px;
 }
-
-/* Стилі для міток (лейблів) чекбоксів */
 label {
   position: relative;
   display: block;
@@ -134,55 +153,4 @@ label {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-/* Стилі для незазначених чекбоксів */
-input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Стилі для зовнішнього вигляду незазначених чекбоксів */
-label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #999;
-  border-radius: 3px;
-  background-color: #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-/* Стилі для зовнішнього вигляду натиснутих чекбоксів */
-input[type="checkbox"]:checked + label:before {
-  background-color: #1abc9c;
-  border-color: #1abc9c;
-}
-
-/* Анімація для зовнішнього вигляду незазначених чекбоксів */
-label:before {
-  transform: scale(1);
-  transition: all 0.2s ease-in-out;
-}
-
-/* Анімація для зовнішнього вигляду натиснутих чекбоксів */
-input[type="checkbox"]:checked + label:before {
-  transform: scale(0.9);
-  transition: all 0.2s ease-in-out;
-}
-
-/* Анімація для зовнішнього вигляду натиснутих чекбоксів при наведенні */
-input[type="checkbox"]:checked + label:before:hover {
-  transform: scale(1.1);
-}
-
-/* Анімація для зовнішнього вигляду незазначених чекбоксів при наведенні */
-label:before:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
 }

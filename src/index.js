@@ -1,6 +1,7 @@
 
 import { render } from 'react-dom';
 import React, { useState, useEffect } from 'react';
+import './index.css';
 
 const categoryColors = {
 grass: 'green',
@@ -62,7 +63,7 @@ const handleShowCharacteristics = async () => {
     // Додаткові кольори для інших категорій можна додати тут
   };
   return ( 
-    <div className="pokemon-card" onClick={handleShowCharacteristics}> 
+    <div className="pokemon-card" style={{ backgroundColor: 'transparent' }} onClick={handleShowCharacteristics}>
       <img src={imageUrl} alt={title} /> 
       <h1>{title}</h1>
       <div>
