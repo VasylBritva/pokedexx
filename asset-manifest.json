@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pokedexx/static/css/main.ad6a37e9.css",
+    "main.js": "/pokedexx/static/js/main.141deea8.js",
+    "index.html": "/pokedexx/index.html",
+    "main.ad6a37e9.css.map": "/pokedexx/static/css/main.ad6a37e9.css.map",
+    "main.141deea8.js.map": "/pokedexx/static/js/main.141deea8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad6a37e9.css",
+    "static/js/main.141deea8.js"
+  ]
+}
